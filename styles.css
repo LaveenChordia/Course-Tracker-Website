@@ -1,0 +1,175 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue */
+    color: #1c2833; /* Darker text for readability */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff5733; /* Bright orange */
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(240, 4, 4, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff4500; /* Darker orange */
+    transform: scale(1.05);
+}
+
+/* Course Tracker Section */
+.course-tracker {
+    background-color: #ffa500; /* Orange */
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.course-tracker h2 {
+    margin-bottom: 20px;
+    color: #ff0000; /* Red */
+    font-size: 2.0em;
+    border-bottom: 2px solid #ff6347; /* Tomato red */
+    padding-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #008000; /* Green */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #add8e6; /* Light blue */
+}
+
+table tr:hover {
+    background-color: #87cefa; /* Sky blue */
+}
+
+/* Links and Footer */
+a {
+    color: #0000ff; /* Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6347; /* Tomato red */
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Footer Navigation */
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #32cd32; /* Lime green */
+}
+
+/* Buttons */
+button {
+    background-color: #ff4500; /* Dark orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Tomato red */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    footer nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

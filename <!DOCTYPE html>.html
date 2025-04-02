@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ecef;
+            color: #2c3e50;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #060708;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.1em;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #080e15;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px 0;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 2.0em;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4A90E2;
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Learn More Section */
+        .learn-more {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .learn-more h2 {
+            color: #2c3e50;
+        }
+
+        .learn-more p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Course Tracker</h2>
+            <p>Track your lectures, notes, and find supplemental resources.</p>
+            <!-- Removed the first Learn More button -->
+        </section>
+
+        <section id="courses">
+            <h2>Course List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Instructor</th>
+                        <th>Lecture Notes</th>
+                        <th>References</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Programming</td>
+                        <td>Prof. Ajit Mali</td>
+                        <td><a href="https://www.learnpython.org/" target="_blank">Lecture 1 Notes</a></td>
+                        <td>
+                            <a href="https://www.python.org/" target="_blank">Reference Material 1</a><br>
+                            <a href="https://www.w3schools.com/python/" target="_blank">Reference Material 2</a>
+                        </td>
+                        <td>This course covers the basics of programming using Python.</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Prof. Vaishali Babu</td>
+                        <td><a href="https://www.freecodecamp.org/learn/" target="_blank">Lecture 2 Notes</a></td>
+                        <td>
+                            <a href="https://www.w3schools.com/" target="_blank">Reference Material 1</a><br>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Reference Material 2</a>
+                        </td>
+                        <td>Learn how to build interactive websites using HTML, CSS, and JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures and Algorithms</td>
+                        <td>Dr. Ravi Kumar</td>
+                        <td><a href="https://visualgo.net/" target="_blank">Lecture 3 Notes</a></td>
+                        <td>
+                            <a href="https://cs50.harvard.edu/x/" target="_blank">Reference Material 1</a><br>
+                            <a href="https://www.geeksforgeeks.org/" target="_blank">Reference Material 2</a>
+                        </td>
+                        <td>This course explores fundamental algorithms and data structures essential for problem solving.</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning Basics</td>
+                        <td>Prof. Neha Patil</td>
+                        <td><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Lecture 4 Notes</a></td>
+                        <td>
+                            <a href="https://scikit-learn.org/" target="_blank">Reference Material 1</a><br>
+                            <a href="https://www.tensorflow.org/" target="_blank">Reference Material 2</a>
+                        </td>
+                        <td>Get introduced to machine learning concepts and build simple models.</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management Systems</td>
+                        <td>Prof. Sunil Desai</td>
+                        <td><a href="https://www.w3schools.com/sql/" target="_blank">Lecture 5 Notes</a></td>
+                        <td>
+                            <a href="https://www.mysql.com/" target="_blank">Reference Material 1</a><br>
+                            <a href="https://www.postgresql.org/" target="_blank">Reference Material 2</a>
+                        </td>
+                        <td>Learn SQL and understand how databases work with practical examples.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section id="assignments">
+            <h2>Assignments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assignment Title</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programming Assignment 1</td>
+                        <td>2024-10-20</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development Project</td>
+                        <td>2024-11-15</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                "This course tracker helped me stay organized and focused. Highly recommend!" - <strong>Laveen</strong>
+            </blockquote>
+            <blockquote>
+                "The resources provided were invaluable for my studies." - <strong>Devashish</strong>
+            </blockquote>
+        </section>
+
+        <section id="resources">
+            <h2>Supplemental Resources</h2>
+            <ul>
+                <li><a href="https://github.com/" target="_blank">GitHub Projects</a></li>
+                <li><a href="https://www.connectedpapers.com" target="_blank">Research Papers</a></li>
+                <li><a href="https://www.goodreads.com/" target="_blank">Book Recommendations</a></li>
+            </ul>
+        </section>
+
+        <!-- Learn More Section -->
+        <section class="learn-more">
+            <h2>Learn More</h2>
+            <p>Explore more about our courses and resources to enhance your learning experience.</p>
+            <p>Check out our detailed course outlines, additional assignments, and valuable resources!</p>
+            <button onclick="alert('Explore more resources!')">Explore More</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Course Tracker. All rights reserved.</p>
+        <p>Contact: laveenchordia@gmail.com</p>
+    </footer>
+</body>
+</html>
